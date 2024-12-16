@@ -1,0 +1,52 @@
+.articleCard {
+    padding: 10px;
+    border-bottom: 1px solid var(--third-color);
+    border-radius: 5px;
+}
+
+.active {
+    background-color: var(--third-color);
+    border-radius: 5px;
+
+    h3, p {
+        color: var(--secondary-color);
+    }
+
+    p {
+        font-weight: 400;
+    }
+}
+
+.articleTitle {
+    font-size: 1.5rem;
+}
+
+.articleVotes {
+    width: 6rem;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+     
+    p {
+        color: white !important;
+    }
+}
+@media (max-width: 768px) { /* `md` breakpoint in Bootstrap (768px and below) */
+    .articleTitle {
+        white-space: nowrap;          /* Prevent text from wrapping */
+        overflow: hidden;             /* Hide the overflowing text */
+        text-overflow: ellipsis;      /* Add an ellipsis (...) to indicate overflow */
+        width: 400px;                 /* Set a specific width for the container */
+    }
+}
+
+@media (max-width: 576px) { /* `md` breakpoint in Bootstrap (768px and below) */
+    .articleTitle {
+        white-space: nowrap;          /* Prevent text from wrapping */
+        overflow: hidden;             /* Hide the overflowing text */
+        text-overflow: ellipsis;      /* Add an ellipsis (...) to indicate overflow */
+        width: 200px;                 /* Set a specific width for the container */
+    }
+}
+

@@ -1,0 +1,15 @@
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainContaint {
+    min-height: 90vh;
+}

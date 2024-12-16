@@ -1,0 +1,54 @@
+.purpleNav {
+  background-color: var(--primary-color);
+}
+
+.logoColor {
+  color: var(--four-color) !important;
+}
+
+.buttonWithDot {
+  position: relative;
+  cursor: pointer;
+}
+
+.buttonWithDot::after {
+  content: ""; /* Empty content for the dot */
+  position: absolute;
+  top: -5px; /* Adjust to the desired location */
+  right: -5px; /* Adjust to the desired location */
+  width: 10px; /* Dot width */
+  height: 10px; /* Dot height */
+  background-color: red; /* Red color for the dot */
+  border-radius: 50%; /* Make it circular */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* Optional: Add a slight shadow */
+}
+
+.active {
+    background-color: var(--primary-color);
+    color: var(--four-color) !important;
+
+    p {
+        color: var(--four-color) !important;
+    }
+}
+
+.active p:hover {
+    background-color: var(--primary-color);
+    color: var(--four-color) !important;
+}
+
+.active p:focus {
+    background-color: var(--primary-color);
+    color: var(--four-color) !important;
+}
+
+.active p:active {
+    background-color: var(--primary-color);
+    color: var(--four-color) !important;
+}
+
+@media (max-width: 422px) { /* `md` breakpoint in Bootstrap (768px and below) */
+  .menuItem {
+    width: 100%;
+  }
+}

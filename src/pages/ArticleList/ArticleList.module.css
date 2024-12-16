@@ -1,0 +1,8 @@
+.articleList {
+  overflow-y: auto;
+  height: 75vh;
+}
+
+.customPageList {
+    height: 10vh;
+}
